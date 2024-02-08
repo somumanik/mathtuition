@@ -1,0 +1,309 @@
+
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   margin: 0;
+   padding: 0;
+   background-color: #03042c;
+}
+#container
+{
+    width: 95%;
+   /* width: 1350px; */
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+#header
+{
+  
+    /* height: 125px; */
+    padding: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
+#logo 
+{
+    flex: 55%;
+    /* float: left; */
+}
+#logo h1 a
+{
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: bold;
+    font: bolder;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 2px green;
+    transition: color 2s, font-size 2s,text-transform 2s, text-shadow 2s;
+}
+#logo h1 a:hover
+{
+    color: green;
+    text-decoration: underline;
+    font-size: 70px;
+    text-shadow: -1px 1px black,1px 1px black,1px -1px black;
+
+
+}
+#searchbox
+{
+    flex: 5%;
+    background-color: rgb(17, 17, 221);
+    /* float: right; */
+    /* width: 350px; */
+    /* height: 50px; */
+    /* padding: 20px 20px 0px 20px; */
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text
+{
+    float: left;
+    border: 2px white solid;
+    border-radius: 5px;
+    padding: 12px 0px 12px 10px;
+    width: 250px;
+    height: 5px;
+    background: white url(../Image/search.png) no-repeat right center ; 
+}
+.submit
+{
+    float: right;
+    margin-left: 20px;
+    padding: 4px;
+    background-color: aqua;
+    color: blue;
+    border: 2px white solid;
+    border-radius: 5px;
+
+}
+#menubar
+{
+    /* width: 100%; */
+    text-transform: capitalize;
+    background-color: blue;
+    padding: 15px 0px;
+    border: 1px solid white; 
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#menubar a
+{
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    padding: 0px 80px; 
+    height:  25px;
+    line-height: 30px;
+    border-right: 1px solid white;
+    font-size: 18px;
+    
+
+}
+#menubar a:last-child
+{
+    border-right : none;
+}
+#menubar a:hover
+{
+    color:aqua;
+
+}
+#menubar a.active
+{
+color: chartreuse;
+}
+
+/* Small Screen Responsive Content */
+ @media screen and (max-width:800px)
+ {
+
+    /* Iski zaroorat hai bhi hai aur nahi bhi */
+
+    #menubar
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #menubar a
+    {
+        border-right: none;
+    } 
+ }
+
+#sentence
+{
+    /* width: 100%; */
+    /* height: 220px; */
+    background-color: blue; 
+    border: 2px solid white;
+    margin-top: 8px;
+    padding: 15px 15px 0px;
+    border-radius: 10px;
+}
+#sentence h2
+{
+    text-transform: capitalize;
+    text-shadow: 2px 2px 5px green;
+    color: grey;
+    padding-left: 45px;
+    /* neeche wali properity ko hum text mein border dene ke liye use karte hai */
+    text-shadow: -1px 0 black,0 1px black,0 -1px black;
+    transition: color 2s;
+    
+}
+#sentence h2:hover
+{
+color: white;
+}
+#sentence p
+{
+    padding: 5px 5px 2px 2px;
+    text-transform:capitalize;
+    word-spacing: normal;
+    text-wrap: wrap;
+    text-indent: 35px;
+    text-align: justify;
+    transition: color 3s, text-transform 3s;
+}
+#sentence p:hover
+{
+color: aqua;
+text-transform: uppercase;
+}
+
+.sidebars
+{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.sidebar
+{
+    background-color: rgb(17, 17, 221);
+    /* width: 600px; */
+    /* height: 400px; */
+    width: 100%;
+    height: 100%;
+    border : 2px solid white;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px; 
+
+
+   
+}
+#leftside h3
+{
+text-transform: capitalize;
+color: grey;
+text-shadow: -1px 0 black,0 1px black,0 -1px black;
+text-shadow: 2px -2px 5px green;
+transition: color 3s, text-transform 3s, font-size 3s;
+}
+#leftside h3:hover
+{
+    color: white;
+    text-transform:uppercase;
+    font-size: 25px;
+}
+.sidewrapper
+{
+    flex: 50%;
+    padding: 5px 2px;
+}
+/* #leftside
+{  
+
+    float: left;
+    
+}
+#rightside
+{
+    
+    float:right;
+
+} */
+.boxshadow
+{
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-shadow: 5px 5px 2px 0px rgba(0,0,0,0.1),5px 6px 8px 0px rgba(0,0,0,0.19);
+}
+#rightside h3
+{
+text-transform: capitalize;
+color: grey;
+/* text-shadow: 2px -2px 5px green; */
+text-shadow: -1px 1px black,1px 1px black,1px -1px black;
+text-shadow: 2px -2px 5px green;
+transition: text-transform 3s,color 3s,font-size 3s;
+}
+ #rightside h3:hover
+ {
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+
+ }
+ .sidebar ul li a
+ {
+    padding: 10px ;
+    text-transform: capitalize;
+    text-decoration: none; 
+    color: white; 
+    transition: color 3s, text-transform 3s, text-decoration 3s font-size 3s;
+    
+ }
+ #leftside ul li
+ {
+    padding: 5px;
+    list-style-image: url(../Image/checkbox.png);
+ }
+ #rightside ul li
+ {
+    padding: 20px;
+    list-style-image: url(../Image/background.png);
+ }
+ .sidebar ul li a:hover
+ {
+    color:aqua;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 30px;
+
+ }
+ .clear{
+    clear: both;
+ }
+ #footer
+ {
+    width: 100%;
+    /* height: 40px; */
+    background-color: blue;
+    color: white; 
+    text-align: center;
+    padding: 2px;
+    margin-top: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+ }
+ 
+ 
+ 
